@@ -5,17 +5,14 @@ import java.util.Scanner;
 public class MathApp {
     public static void main(String[] args) {
 
-        // scanner 'userInput' so it's clear what it does.
         Scanner userInput = new Scanner(System.in);
 
-        // we use System.out.print (no 'ln') so the user types on the SAME line.
         System.out.print("Enter the first number: ");
         float firstNumber = userInput.nextFloat();
 
         System.out.print("Enter the second number: ");
         float secondNumber = userInput.nextFloat();
 
-        // \n adds an extra empty line to keep things looking clean.
         System.out.println("Possible calculations:");
         System.out.println("(A)dd");
         System.out.println("(S)ubtract");
@@ -33,7 +30,6 @@ public class MathApp {
         System.out.println("Result");
         System.out.println(firstNumber + " * " + secondNumber + " = " + result);
 
-        // close your scanner when done to keep the computer's memory happy!
         userInput.close();
     }
 }
